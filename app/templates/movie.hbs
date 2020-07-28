@@ -1,0 +1,17 @@
+<h2>{{@model.title}}</h2>
+
+<p>
+  <strong>Published: {{@model.publishedAt}}</strong>
+</p>
+<code>{{@model.description}}</code>
+
+
+<h4>Actors</h4>
+<ul>
+  {{#each @model.actors as |actor|}}
+    <li>
+      {{actor.firstName}}<br>
+      <small> birthday {{actor.birthday}}</small>
+    </li>
+  {{/each}}
+</ul>
