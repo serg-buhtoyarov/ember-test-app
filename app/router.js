@@ -13,4 +13,8 @@ Router.map(function() {
     path: 'movies/:movie_id'
   });
   this.route('add-movie');
+
+  this.route('update-movie', {
+    path: 'update-movie/:movie_id'
+  });
 });

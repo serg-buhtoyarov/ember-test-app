@@ -1,0 +1,15 @@
+<h2>Update movie details below</h2>
+
+<Input @value={{@model.title}} placeholder="title" /><br>
+<Textarea @value={{@model.description}} placeholder="description" style="min-width: 400px;" rows="6" /><br>
+
+<ul>
+  {{#each @model.actors as |actor|}}
+    <li>
+      {{actor.firstName}}<br>
+      <small> birthday {{actor.birthday}}</small>
+    </li>
+  {{/each}}
+</ul>
+
+<button {{on "click" (fn this.updateMovie @model)}}>Update movie</button>

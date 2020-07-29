@@ -32,6 +32,7 @@ export default class AddMovieController extends Controller {
     this.title = "";
     this.description = "";
     this.selectedActorsIds = [];
+    this.transitionToRoute('movies');
   }
 
   @action
