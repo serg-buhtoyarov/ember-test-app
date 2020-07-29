@@ -2,6 +2,7 @@
   {{#each @items as |item|}}
     <li>
       <LinkTo @route="movie" @model={{item.id}}>{{item.title}}</LinkTo>
+      <button {{on "click" (fn this.deleteItem item)}}>Delete</button>
     </li>
   {{/each}}
 </ul>

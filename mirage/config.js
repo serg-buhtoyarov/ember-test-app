@@ -27,6 +27,7 @@ export default function() {
   this.get('/movies');
   this.get('/movies/:id');
   this.post('/movies');
+  this.del('/movies/:id');
 
   this.get('/actors');
 }
