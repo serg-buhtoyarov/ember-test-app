@@ -24,16 +24,9 @@ export default function() {
     https://www.ember-cli-mirage.com/docs/route-handlers/shorthands
   */
 
-  // this.get('/movies', () => {
-  //   return {
-  //     data: [
-  //       { id: 1, type: 'movies', attributes: { name: 'Interstellar' } },
-  //       { id: 2, type: 'movies', attributes: { name: 'Inception' } },
-  //       { id: 3, type: 'movies', attributes: { name: 'Dunkirk' } },
-  //     ]
-  //   };
-  // });
-
   this.get('/movies');
   this.get('/movies/:id');
+  this.post('/movies');
+
+  this.get('/actors');
 }
